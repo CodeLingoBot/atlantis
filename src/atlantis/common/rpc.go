@@ -20,7 +20,7 @@ import (
 	"time"
 )
 
-// Returns false if the two major versions mismatch
+// CompatibleVersions returns false if the two major versions mismatch
 func CompatibleVersions(v1, v2 string) bool {
 	major1 := strings.SplitN(v1, ".", 2)
 	major2 := strings.SplitN(v2, ".", 2)

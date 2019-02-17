@@ -18,7 +18,7 @@ import (
 
 var randomChars = []byte("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789")
 
-// NOTE[jigish]: yes, i know this has modulo bias. i don't care. we don't need a truly random string, just
+// CreateRandomID: NOTE[jigish]: yes, i know this has modulo bias. i don't care. we don't need a truly random string, just
 // one that won't collide often.
 func CreateRandomID(size int) string {
 	randomBytes := make([]byte, size)
